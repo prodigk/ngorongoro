@@ -3,271 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ngorongoro | Slow Forest Village</title>
+  <title>ngorongoro - 감성 일러스트 소품샵 응고롱고로</title>
   <meta
     name="description"
-    content="응고롱고로의 정식 웹사이트 오픈 전까지 게시되는 임시 브랜드 랜딩페이지입니다."
+    content="동물과 자연이 어우러진 감성 포스터, 따뜻한 분위기의 인테리어 소품 선물 전문샵"
   />
-  <style>
-    :root {
-      --color-bg: #f7f4ef;
-      --color-surface: rgba(255, 255, 255, 0.58);
-      --color-green: #5a7a5e;
-      --color-green-lt: #a8c5a3;
-      --color-brown: #8b6e52;
-      --color-text: #3a3530;
-      --color-text-sub: #6f665d;
-      --color-border: rgba(90, 122, 94, 0.18);
-      --color-white: #ffffff;
-      --shadow-soft: 0 30px 80px rgba(72, 59, 41, 0.10);
-    }
+  <meta
+    name="keywords"
+    content="일러스트포스터, 감성포스터, 인테리어소품, 감성소품, 선물추천, 액자선물, 감성인테리어, 그림액자, 집들이선물, 동물그림"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ngorongoro.kr/" />
 
-    * {
-      box-sizing: border-box;
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="ngorongoro" />
+  <meta
+    property="og:title"
+    content="ngorongoro - 감성 일러스트 소품샵 응고롱고로"
+  />
+  <meta
+    property="og:description"
+    content="동물과 자연이 어우러진 감성 포스터, 따뜻한 분위기의 인테리어 소품 선물 전문샵"
+  />
+  <meta property="og:url" content="https://ngorongoro.kr/" />
 
-    html,
-    body {
-      margin: 0;
-      min-height: 100%;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      overflow: hidden;
-      color: var(--color-text);
-      background:
-        radial-gradient(circle at top left, rgba(168, 197, 163, 0.34), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(139, 110, 82, 0.16), transparent 28%),
-        linear-gradient(180deg, #fbf8f3 0%, var(--color-bg) 100%);
-      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    }
-
-    body::before,
-    body::after {
-      position: fixed;
-      border-radius: 999px;
-      content: "";
-      pointer-events: none;
-      filter: blur(8px);
-    }
-
-    body::before {
-      top: -120px;
-      left: -90px;
-      width: 320px;
-      height: 320px;
-      background: rgba(168, 197, 163, 0.24);
-    }
-
-    body::after {
-      right: -100px;
-      bottom: -120px;
-      width: 280px;
-      height: 280px;
-      background: rgba(139, 110, 82, 0.14);
-    }
-
-    .page {
-      position: relative;
-      width: min(100%, 760px);
-      padding: 40px 28px;
-    }
-
-    .card {
-      position: relative;
-      border: 1px solid var(--color-border);
-      border-radius: 28px;
-      padding: 48px 28px 36px;
-      text-align: center;
-      background: var(--color-surface);
-      box-shadow: var(--shadow-soft);
-      backdrop-filter: blur(14px);
-      animation: rise 1s ease both;
-    }
-
-    .card::before {
-      position: absolute;
-      inset: 14px;
-      border: 1px solid rgba(90, 122, 94, 0.08);
-      border-radius: 20px;
-      content: "";
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      margin: 0 0 18px;
-      color: var(--color-green);
-      font-size: 0.73rem;
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
-
-    .logo-wrap {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: min(100%, 216px);
-      margin-bottom: 26px;
-      animation: fade 1.1s ease both;
-    }
-
-    .logo-wrap img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    h1 {
-      margin: 0;
-      font-family: "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
-      font-size: clamp(2.4rem, 7vw, 4.6rem);
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      line-height: 0.96;
-    }
-
-    .subtitle {
-      margin: 12px 0 0;
-      color: var(--color-brown);
-      font-family: "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
-      font-size: clamp(1rem, 2.9vw, 1.3rem);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .description {
-      width: min(100%, 470px);
-      margin: 24px auto 0;
-      color: var(--color-text-sub);
-      font-size: 1rem;
-      line-height: 1.9;
-    }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 26px;
-      padding: 10px 16px;
-      border: 1px solid rgba(90, 122, 94, 0.18);
-      border-radius: 999px;
-      color: var(--color-green);
-      background: rgba(255, 255, 255, 0.64);
-      font-size: 0.9rem;
-      letter-spacing: 0.02em;
-    }
-
-    .status::before {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--color-green);
-      box-shadow: 0 0 0 6px rgba(168, 197, 163, 0.18);
-      content: "";
-    }
-
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 32px;
-    }
-
-    .chip {
-      padding: 10px 14px;
-      border: 1px solid rgba(58, 53, 48, 0.08);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.72);
-      color: var(--color-text-sub);
-      font-size: 0.88rem;
-    }
-
-    .footer-note {
-      margin-top: 30px;
-      color: var(--color-text-sub);
-      font-size: 0.83rem;
-      letter-spacing: 0.04em;
-    }
-
-    @keyframes rise {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fade {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 640px) {
-      body {
-        padding: 16px;
-      }
-
-      .page {
-        padding: 0;
-      }
-
-      .card {
-        padding: 34px 20px 28px;
-        border-radius: 22px;
-      }
-
-      .card::before {
-        inset: 10px;
-      }
-
-      .description {
-        font-size: 0.95rem;
-        line-height: 1.8;
-      }
-
-      .meta {
-        gap: 10px;
-      }
-    }
-  </style>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="ngorongoro - 감성 일러스트 소품샵 응고롱고로"
+  />
+  <meta
+    name="twitter:description"
+    content="동물과 자연이 어우러진 감성 포스터, 따뜻한 분위기의 인테리어 소품 선물 전문샵"
+  />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-  <main class="page">
-    <section class="card" aria-label="임시 브랜드 랜딩페이지">
-      <p class="eyebrow">Temporary Landing Page</p>
-      <div class="logo-wrap">
-        <img src="./assets/images/logo_black.svg" alt="ngorongoro logo" />
+  <div class="site">
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="응고롱고로 홈">
+        <img src="./assets/images/logo_type.svg" alt="ngorongoro" />
+      </a>
+      <div class="header-meta" aria-label="사이트 상태">
+        <span>Seoul, KR</span>
+        <span class="header-status">Opening soon</span>
+        <div class="social-links" aria-label="소셜 링크">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/ngorongoro.kr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="응고롱고로 인스타그램 새 탭에서 열기"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4.2" />
+              <circle cx="17.4" cy="6.7" r="0.8" fill="currentColor" stroke="none" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a
+            class="social-link"
+            href="https://ozip.me/Vcvf8QX"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="응고롱고로 오늘의집 새 탭에서 열기"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 11 12 4l8 7" />
+              <path d="M6.5 9.5V20h11V9.5" />
+            </svg>
+            <span>오늘의 집</span>
+          </a>
+        </div>
       </div>
-      <h1>ngorongoro</h1>
-      <p class="subtitle">Slow Forest Village</p>
-      <p class="description">
-        응고롱고로의 정식 브랜드 웹사이트는 현재 준비 중입니다.
-        이 페이지는 도메인 연결과 퍼블리싱 상태를 확인하기 위한 임시 랜딩페이지로,
-        오픈 전까지 조용히 브랜드의 자리를 지키고 있습니다.
-      </p>
-      <div class="status">Domain connection ready</div>
-      <div class="meta" aria-label="도메인 및 브랜드 정보">
-        <span class="chip">ngorongoro.kr</span>
-        <span class="chip">Brand site coming soon</span>
-        <span class="chip">Static HTML publishing</span>
-      </div>
-      <p class="footer-note">© 2026 ngorongoro. All rights reserved.</p>
-    </section>
-  </main>
+    </header>
+
+    <main class="hero">
+      <section class="hero-main" aria-labelledby="hero-title">
+        <h1 class="hero-heading" id="hero-title">
+          <span>Slow Forest</span>
+          <span>Village.</span>
+        </h1>
+
+        <div class="hero-bottom">
+          <!-- <div class="brand-mark">
+            <img src="./assets/images/logo_black.svg" alt="ngorongoro" />
+          </div> -->
+          <div class="hero-intro">
+            <p class="index">About</p>
+            <p class="intro-copy">
+              <!-- 조용한 동물들과 자연이 함께 머무는 장면을 그립니다.
+              바쁘지 않은 하루의 한가운데, 잠시 멈춰도 괜찮다는
+              작은 위로를 전합니다. -->
+              <!-- 응고롱고로는 조용한 동물들과 자연이 함께 머무는 장면을 그림으로 표현합니다.<br />
+      
+              자연 안에서 머무는 동물들의 모습은 하루의 속도를 천천히 되돌려줍니다.<br />
+              그림마다 각자의 독립된 이야기지만, 함께 놓였을 때 마치 하나의 고요한 풍경처럼 <br />
+              자연스럽게 이어지기를 바랍니다. -->
+              응고롱고로는 동물들이 편안히 쉬는 상상 속 자연 공간에서 출발한 브랜드입니다. <br />
+              그림을 통해 잠시 쉬어가고 싶은 마음, <br />
+              아무것도 하지 않아도 괜찮은 하루의 기분을 전하고자 합니다.<br />
+              각 작품은 따뜻하고 부드러운 색감, 여백 있는 구성을 통해
+              일상에 잔잔한 위로와 정서적 쉼을 전합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="hero-visual" aria-label="응고롱고로 작품 이미지">
+        <div class="artwork-frame" data-random-artwork>
+          <img
+            data-artwork-image
+            src="./assets/images/hero/desktop/artwork-01.png"
+            alt="응고롱고로 토끼 일러스트"
+          />
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 ngorongoro</p>
+      <p>Official site in progress</p>
+      <p>ngorongoro.kr</p>
+    </footer>
+  </div>
 </body>
 </html>

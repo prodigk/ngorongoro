@@ -2,7 +2,7 @@
 
 > **목적**: 응고롱고로의 감성과 브랜드 세계관을 전달하는 정적(Static) 소개 웹사이트.  
 > 상품 구매는 외부 스토어(ngorongoro.kr)로 연결하며, 이 사이트는 브랜드 경험과 스토리텔링에 집중합니다.  
-> 최종 결과물은 AWS S3 + CloudFront 또는 AWS Amplify로 호스팅합니다.
+> 최종 결과물은 Vercel 로 호스팅 합니다.
 
 ---
 
@@ -13,7 +13,7 @@
 | 사이트명 | ngorongoro — Lifestyle Village |
 | 도메인 예정 | ngorongoro.kr (또는 별도 서브도메인) |
 | 기술 스택 | HTML5 / CSS3 / Vanilla JS (또는 Vite + React 가능) |
-| 호스팅 | AWS S3 정적 호스팅 + CloudFront CDN |
+| 호스팅 | Vercel |
 | 빌드 도구 | Vite (권장) 또는 순수 HTML |
 | 언어 | 한국어 기본, 영문 병기(제목/슬로건) |
 | 반응형 | 모바일 우선 (Mobile First) |
