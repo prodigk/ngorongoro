@@ -296,6 +296,19 @@ a {
     display: none;
   }
 
+  .header-status {
+    display: none;
+  }
+
+  .social-links {
+    margin-left: 0;
+  }
+
+  .social-link svg {
+    width: 28px;
+    height: 28px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
@@ -339,7 +352,7 @@ a {
   }
 
   .social-links {
-    margin-left: 14px;
+    gap: 24px;
   }
 
   .hero {
