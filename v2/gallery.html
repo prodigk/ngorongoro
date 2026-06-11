@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="응고롱고로의 작품 갤러리입니다." />
+  <title>Gallery · ngorongoro</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="./assets/js/artworks.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="./index.html">ngorongoro</a>
+      <button class="menu-button" type="button" aria-expanded="false" data-menu-button>Menu</button>
+      <nav class="site-nav" aria-label="주요 메뉴" data-navigation>
+        <a href="./index.html">Home</a>
+        <a href="./gallery.html" aria-current="page">Gallery</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <span class="header-note">Works archive</span>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div>
+          <p class="page-kicker">Works archive</p>
+          <h1 class="display-title">Gallery.</h1>
+        </div>
+        <p class="hero-copy">
+          각 작품의 이미지와 구매 링크는 작품 데이터 파일에서 관리합니다.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <div class="gallery-grid" data-gallery aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-current-year></span> ngorongoro</span>
+      <span>Slow Forest Village</span>
+    </footer>
+  </div>
+</body>
+</html>
