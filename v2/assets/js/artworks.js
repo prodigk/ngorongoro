@@ -22,7 +22,7 @@ window.NGORONGORO_ARTWORKS = [
     titleEn: "Better Together",
     year: "2025",
     size: "A3 Landscape",
-    image: `${file_path}better-to.png`,
+    image: `${file_path}better-together.png`,
     alt: "함께 있는 동물들을 그린 응고롱고로 작품",
     purchaseUrl: "",
     status: "coming-soon",
